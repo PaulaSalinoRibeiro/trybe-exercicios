@@ -3,9 +3,9 @@
 Este diretório foi criado para a realização das atividades referente ao dia 1 - estrutura de páginas :woman_technologist:
 Os objetinos foram: 
     
-    - estrutura páginas web com HTML utilizando as tags **html**, **head** e **body**;
+    - estrutura páginas web com HTML utilizando as tags html, head e body;
     - utilizar o HTML para estruturar textos e títulos;
-    - utilizar o HTML para criar listas, *links* e adicionar imagens; 
+    - utilizar o HTML para criar listas, _links_ e adicionar imagens; 
 
 ## Atividades :writing_hand:
 
@@ -13,5 +13,5 @@ Os objetinos foram:
     - [ ] Adicionar uma imagem de uma URL externa 
     - [ ] Adicionar uma imagem do computador 
     - [ ] Criar um parágrafo para cada pessoa da lista
-    - [ ] Criar *links* entre a lista de pessoas e o parágrafo da pessoa 
-    - [ ] Criar um *link* para a página do Google 
+    - [ ] Criar _links_ entre a lista de pessoas e o parágrafo da pessoa 
+    - [ ] Criar um _link_ para a página do Google 
