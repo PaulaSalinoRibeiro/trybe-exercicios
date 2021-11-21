@@ -4,7 +4,7 @@ Neste diretório foi visto linhas de _comandos no terminal_, o conteúdo foi div
 
 ## Parte 1
 
-Executamos comandos para navegar entre diretórios, criar e manipular arquivos e diretórios e ainda comandos para realizar buscas 
+Executamos comandos para navegar entre diretórios, criar e manipular arquivos e diretórios e ainda comandos para realizar busca, segue a lista a seguir:
 
     - ls                            lista arquivos e diretórios 
     - ls -a                         lista todos os arquivos e diretórios 
@@ -31,9 +31,7 @@ Executamos comandos para navegar entre diretórios, criar e manipular arquivos e
 
 ## Parte 2
 
-Executamos comandos _find_, utilizamos os operadores _>_, _>>_ e |,
-alteramos permissões de arquivos e diretórios e 
-verificarmos o status e enviamos sinais a processos UNIX 
+Executamos comandos _find_, utilizamos os operadores _>_, _>>_ e |, alteramos permissões de arquivos e diretórios e verificarmos o status e enviamos sinais a processos UNIX, segue a lista abaixo:
 
   
     - comando > arquivo                         redireciona a saída padrão para um arquivo 
@@ -56,6 +54,6 @@ verificarmos o status e enviamos sinais a processos UNIX
     - kill 26333                                encerra o processo de número 26333
 
 
-### Diretório unix-tests
+### unix-tests
 
-No diretório unix-tests consta os arquivos criados para a execução dos comandos acima
+No diretório unix-tests consta todos os arquivos criados para a execução dos exercicos utilizando os comandos acima
