@@ -9,20 +9,20 @@ Executamos comandos para navegar entre diretórios, criar e manipular arquivos e
     - ls                            lista arquivos e diretórios 
     - ls -a                         lista todos os arquivos e diretórios 
     - mkdir                         cria um diretório 
-    - cd _dir_                      muda para o _dir_ nomeado 
+    - cd dir                        muda para o dir nomeado 
     - cd                            muda para o diretório inicial 
     - cd ~                          muda para o diretório inicial 
     - cd  ../                       muda para o diretório pai 
     - pwd                           mostra o caminho do diretório atual 
-    - cp _arq1_ _arq2_              copia o _arq1_ e o chama de _arq2_
-    - rm _arq_                      remove um _arq_
-    - rmdir _dir_                   remove um _dir_
-    - less _arq_                    exibe um arquivo uma página de cada vez
-    - cat _arq_                     exibe _arq_
-    - head _arq_                    exibe por padrão as 10 primeiras linhas de um arquivo 
-    - tail _arq_                    exibe por padrão as últimas 10 linhas de um arquivo 
-    - grep 'palavra chave' _arq_    procura pela palavra chave dentro de _arq_
-    - wc _arq_                      conta o número de linhas, palavras e caracteres
+    - cp arq1 arq2                  copia o arq1 e o chama de arq2
+    - rm arq                        remove um arq
+    - rmdir dir                     remove um dir
+    - less arq                      exibe um arquivo uma página de cada vez
+    - cat arq                       exibe arq
+    - head arq                      exibe por padrão as 10 primeiras linhas de um arquivo 
+    - tail arq                      exibe por padrão as últimas 10 linhas de um arquivo 
+    - grep 'palavra chave' arq      procura pela palavra chave dentro de arq
+    - wc arq                        conta o número de linhas, palavras e caracteres
     - *                             corresponde a qualquer numero de caracteres
     - ?                             corresponde a um caracter 
     - man                           retorna o manual do comando informado     
@@ -31,9 +31,9 @@ Executamos comandos para navegar entre diretórios, criar e manipular arquivos e
 
 ## Parte 2
 
-Executamos comandos _find_, utilizamos os operadores _>_, _>>_ e |
-Alteramos permissões de arquivos e diretórios 
-Verificarmos o status e enviamos sinais a processos UNIX 
+Executamos comandos _find_, utilizamos os operadores _>_, _>>_ e |,
+alteramos permissões de arquivos e diretórios e 
+verificarmos o status e enviamos sinais a processos UNIX 
 
   
     - comando > arquivo                         redireciona a saída padrão para um arquivo 
@@ -56,4 +56,6 @@ Verificarmos o status e enviamos sinais a processos UNIX
     - kill 26333                                encerra o processo de número 26333
 
 
-    
+### Diretório unix-tests
+
+No diretório unix-tests consta os arquivos criados para a execução dos comandos acima
