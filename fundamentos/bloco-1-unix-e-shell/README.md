@@ -56,4 +56,6 @@ verificarmos o status e enviamos sinais a processos UNIX
     - kill 26333                                encerra o processo de número 26333
 
 
+### Diretório unix-tests
 
+No diretório unix-tests consta os arquivos criados para a execução dos comandos acima
