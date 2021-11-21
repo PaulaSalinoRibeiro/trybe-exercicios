@@ -2,6 +2,8 @@
 
 Este diretório contem exercicios referentes as atividades do modulo de _fundamentos em desenvolvimento web_!
 
+Que consistem em:
+
     - utilizar o terminal 
     - entender a internet, seus principais conceitos e termos
     - utilizar Git e GitHub
