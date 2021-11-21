@@ -1,7 +1,6 @@
 # Bloco 3 - Introdução à HTML & CSS
 
-Este diretório foi criado para a realização das atividades referente ao dia 1 - estrutura de páginas :woman_technologist:
-Os objetinos foram: 
+Este diretório foi criado para a realização das atividades referente ao dia 1 - estrutura de páginas :woman_technologist: e os objetinos foram: 
     
     - estrutura páginas web com HTML utilizando as tags html, head e body;
     - utilizar o HTML para estruturar textos e títulos;
