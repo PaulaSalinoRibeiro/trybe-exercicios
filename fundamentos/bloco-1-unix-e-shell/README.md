@@ -31,9 +31,9 @@ Executamos comandos para navegar entre diretórios, criar e manipular arquivos e
 
 ## Parte 2
 
-Executamos comandos _find_, utilizamos os operadores _>_, _>>_ e |
-Alteramos permissões de arquivos e diretórios 
-Verificarmos o status e enviamos sinais a processos UNIX 
+Executamos comandos _find_, utilizamos os operadores _>_, _>>_ e |,
+alteramos permissões de arquivos e diretórios e 
+verificarmos o status e enviamos sinais a processos UNIX 
 
   
     - comando > arquivo                         redireciona a saída padrão para um arquivo 
