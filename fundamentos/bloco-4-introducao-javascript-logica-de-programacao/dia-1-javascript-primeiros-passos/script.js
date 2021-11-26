@@ -5,7 +5,7 @@ const birtyCity = "Ubá";
 let birthYear = 1990;
 
 birthYear = 2030;
-//birtyCity = "Rio de Janeiro";
+//birtyCity = "Rio de Janeiro"; const não pode ser redeclarada
 
 console.log(myName);
 console.log(birtyCity);
