@@ -1,3 +1,5 @@
+//Faça um programa que retorne o maior de dois números. Defina no começo do programa duas constantes com os valores que serão comparados.
+
 let num1 = 54;
 let num2 = 300;
 
