@@ -57,3 +57,14 @@ console.log(oddNumbers);
 if(oddNumbers.length === 0){
     console.log("nenhum valor ímpar encontrado");
 }
+
+// Utilizando for , descubra qual o menor valor contido no array e imprima-o
+
+let smallNumber = numbers[0];
+
+for(let index = 0; index < numbers.length; index += 1){
+    if(smallNumber > numbers[index]){
+        smallNumber = numbers[index];
+    }
+}
+console.log(smallNumber);
