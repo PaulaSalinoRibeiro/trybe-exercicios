@@ -68,3 +68,22 @@ for(let index = 0; index < numbers.length; index += 1){
     }
 }
 console.log(smallNumber);
+
+// Utilizando for , crie um array que vá de 1 até 25 e imprima o resultado;
+
+let arr = [];
+
+for(let index = 1; index <= 25; index += 1){
+    arr.push(index);
+}
+
+console.log(arr);
+
+// Utilizando o array criado no exercício anterior imprima o resultado da divisão de cada um dos elementos por 2 
+
+let division;
+
+for(let index = 0; index < arr.length; index += 1){
+    division = (arr[index] / 2);
+    console.log(division);
+}
