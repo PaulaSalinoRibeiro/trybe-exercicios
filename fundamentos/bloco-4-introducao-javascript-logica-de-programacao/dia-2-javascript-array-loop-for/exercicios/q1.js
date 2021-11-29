@@ -40,3 +40,20 @@ for(let index = 0; index < numbers.length; index += 1){
     }
 }
 console.log(higherNumber);
+
+// Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: "nenhum valor ímpar encontrado";
+
+let oddNumbers = [];
+
+for(let index = 0; index < numbers.length; index += 1){
+    if(numbers[index] % 2 !== 0){
+        oddNumbers.push(numbers[index]);
+    }
+}
+
+console.log(oddNumbers.length);
+console.log(oddNumbers);
+
+if(oddNumbers.length === 0){
+    console.log("nenhum valor ímpar encontrado");
+}
