@@ -14,3 +14,5 @@ Para acessar as chaves de um objeto pode ser atraves da notação de ponto ou de
 
 ### For in
 
+Acessa a chave do objeto 
+Para acessar o valor do objeto, deve-se passar o valor da chave entre colchetes
