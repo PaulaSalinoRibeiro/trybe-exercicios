@@ -6,3 +6,11 @@
 - [ ] Utilizar o comando for/in
 - [ ] Utilizar funções para organizar e estrutura o seu código 
 
+### Objeto 
+
+Permite armazenar informações na forma de chave e valor ou propriedade e valor
+Para acessar as chaves de um objeto pode ser atraves da notação de ponto ou de colchetes
+
+
+### For in
+
