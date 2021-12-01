@@ -16,3 +16,7 @@ Para acessar as chaves de um objeto pode ser atraves da notação de ponto ou de
 
 Acessa a chave do objeto 
 Para acessar o valor do objeto, deve-se passar o valor da chave entre colchetes
+
+### Funções 
+
+Permite dividir o código em bloco lógicos e deixar mais organizado 
