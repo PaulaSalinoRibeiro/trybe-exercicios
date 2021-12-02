@@ -1,6 +1,16 @@
 // 1- Crie uma função que receba uma string e retorne true se for um palíndromo , ou false , se não for.
 
+    function isPalindrome(str){
 
+        let arr = str.split(''); 
+        let reverse = str.split('').reverse();
+        
+        if(arr.join() === reverse.join()){
+            return true;
+        }else{
+            return false;
+        }  
+    }    
 
 // 2- Crie uma função que receba um array de inteiros e retorne o índice do maior valor
 
