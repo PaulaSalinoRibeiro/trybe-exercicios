@@ -4,4 +4,19 @@
 
 ## Seletores
 
+- HTMLCollection;
+
 - [ ] getElementById
+- [ ] getElementsByClassName * retorna uma lista de elementos
+- [ ] getElementsByTagName   * retorna uma lista de elementos
+
+- NodeList;
+
+- [ ] querySelector      * apenas um elemento
+                         * seletores CSS
+                         * mais flexílve 
+- [ ] querySelectorAll   * lista de elementos 
+                         * trabalha com seletores CSS
+                         * mais flexível
+
+                         
