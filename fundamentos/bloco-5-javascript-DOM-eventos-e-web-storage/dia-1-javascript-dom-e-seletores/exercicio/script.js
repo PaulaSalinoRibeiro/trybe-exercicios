@@ -32,3 +32,11 @@ function otherColor (color){
 }
 
 otherColor('white');
+
+function checkOrtg(text){
+    let newText = document.getElementsByTagName('h1');
+    newText[0].innerText = text;
+
+}
+
+checkOrtg('Exercício 5.1 - Javascript');
