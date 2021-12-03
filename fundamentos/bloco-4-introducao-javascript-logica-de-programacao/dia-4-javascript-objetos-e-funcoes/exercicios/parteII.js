@@ -49,11 +49,8 @@
         } 
         return bigName;
     }   
-    
-    let arr = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
    
 // Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete
-
 
 // Crie uma função que receba um número inteiro N e retorne o somatório de todos os números de 1 até N
 
