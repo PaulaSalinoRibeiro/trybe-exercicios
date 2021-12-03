@@ -7,7 +7,7 @@ ok Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (r
 ok Crie uma função que mude a cor do quadrado vermelho para branco.
 ok Crie uma função que corrija o texto da tag <h1>.
 ok Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
-Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+ok Crie uma função que exiba o conteúdo de todas as tags <p> no console.
  */
 
 
@@ -53,4 +53,13 @@ checkOrtg('Exercício 5.1 - Javascript');
 
 upperCaseTagParagraph(); 
 
+function consoleTag(){
 
+    let tagP = document.querySelectorAll('p');
+
+    for(let p = 0; p < tagP.length; p += 1){
+        console.log(tagP[p].innerText);
+    }
+}
+
+consoleTag()
