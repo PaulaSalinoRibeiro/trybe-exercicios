@@ -144,10 +144,14 @@
         // Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content ) para a cor verde
         elementMain.style.backgroundColor = 'green';
 
-
         // Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8
-
-
+        let elemetsLi = document.getElementsByTagName('li');
+        let elementUl = document.querySelector('ul')
+        let lastItem = elemetsLi[9];
+        let nineItem = elemetsLi[8];
+        elementUl.removeChild(lastItem);
+        elementUl.removeChild(nineItem);
+    
     </script>
   </body>
 </html>
