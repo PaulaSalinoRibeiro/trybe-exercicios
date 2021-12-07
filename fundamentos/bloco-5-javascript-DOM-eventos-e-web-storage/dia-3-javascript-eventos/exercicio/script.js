@@ -22,12 +22,16 @@ function createDaysOfTheWeek() {
     itens.className = 'day'
     days.appendChild(itens);
 
-    if(dezDaysList[index] === 24 || dezDaysList[index] === 25 || dezDaysList[index] === 31){
+    if(dezDaysList[index] === 24 || dezDaysList[index] === 31){
         itens.className = 'day holiday'
     } 
 
-    if(dezDaysList[index] === 4 || dezDaysList[index] === 11 || dezDaysList[index] === 18 || dezDaysList[index]=== 25){
+    if(dezDaysList[index] === 4 || dezDaysList[index] === 11 || dezDaysList[index] === 18 ){
         itens.className = 'day friday'
+    }
+
+    if(dezDaysList[index]=== 25){
+        itens.className = 'day holiday friday'
     }
   }
 
@@ -39,3 +43,17 @@ function createDaysOfTheWeek() {
     btn.innerText = str
   }
   holidayBtn('Feriados')
+
+  let btnHoliday = document.getElementById('btn-holiday');
+  btnHoliday.addEventListener('click', changeColor);
+
+  function changeColor(){
+    let holidays = document.querySelectorAll('.holiday');
+    for(let index = 0; index < holidays.length; index += 1){
+        if(holidays[index].style.backgroundColor === 'rgb(238, 238, 238)'){
+            holidays[index].style.backgroundColor = 'green'
+        } else{
+            holidays[index].style.backgroundColor = 'rgb(238, 238, 238)'
+        }    
+    }
+  }
