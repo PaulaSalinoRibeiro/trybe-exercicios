@@ -21,15 +21,12 @@ function createDaysOfTheWeek() {
     itens.innerText = dezDaysList[index];
     itens.className = 'day'
     days.appendChild(itens);
-
     if(dezDaysList[index] === 24 || dezDaysList[index] === 31){
         itens.className = 'day holiday'
     } 
-
     if(dezDaysList[index] === 4 || dezDaysList[index] === 11 || dezDaysList[index] === 18 ){
         itens.className = 'day friday'
     }
-
     if(dezDaysList[index]=== 25){
         itens.className = 'day holiday friday'
     }
@@ -46,7 +43,6 @@ function createDaysOfTheWeek() {
 
   let btnHoliday = document.getElementById('btn-holiday');
   btnHoliday.addEventListener('click', changeColor);
-
   function changeColor(){
     let holidays = document.querySelectorAll('.holiday');
     for(let index = 0; index < holidays.length; index += 1){
@@ -57,3 +53,12 @@ function createDaysOfTheWeek() {
         }    
     }
   }
+
+  function isFridayDay(str){
+      let divFriday = document.querySelector('.buttons-container');
+      let btnFriday = document.createElement('button');
+      divFriday.appendChild(btnFriday);
+      btnFriday.innerText = str
+      btnFriday.id = 'btn-friday'
+  }
+  isFridayDay('Sexta-feria')
