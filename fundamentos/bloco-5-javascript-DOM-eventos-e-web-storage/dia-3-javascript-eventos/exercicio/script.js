@@ -62,3 +62,40 @@ function createDaysOfTheWeek() {
       btnFriday.id = 'btn-friday'
   }
   isFridayDay('Sexta-feria')
+
+
+  let btnFriday = document.getElementById('btn-friday')
+  btnFriday.addEventListener('click', changeText);
+
+  function changeText(){
+      let friday = document.querySelectorAll('.friday')
+      for(let index = 0; index < friday.length; index += 1){
+        if(friday[index].innerText === friday[index].innerText){
+            friday[index].innerText = 'Sextou'
+        } else{
+            friday[index].innerText = friday[index].innerText 
+        }
+        console.log(friday[index].innerText)
+      }
+  }
+
+  function mouseIn(){
+    let everyDays = document.getElementById('days')
+    everyDays.addEventListener('mouseover', zoomIn)
+    function zoomIn(event){
+        event.target.style.fontSize = '30px'
+        event.target.style.fontWeight = '800px'
+      }
+  }
+
+  function mouseOut(){
+    let everyDays = document.getElementById('days')
+    everyDays.addEventListener('mouseout', zoomOut)
+    function zoomOut(event){
+      event.target.style.fontSize = '18px'
+      event.target.style.fontWeight = '200px'
+    }
+  }
+
+  mouseIn()
+  mouseOut()
