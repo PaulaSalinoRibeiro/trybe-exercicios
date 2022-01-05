@@ -1,6 +1,9 @@
 body {
     background-color: rgb(162, 171, 189);
 }
+#header {
+    margin-top: 25px;
+}
 
 #city-form {
     margin-bottom: 18px;
