@@ -7,61 +7,73 @@
     <title>Formulário de currículo</title>
 </head>
 <body>
+
     <header>
         <h1>Formulário de Cadastro de Currículo</h1>
     </header>
+
     <main>
-        <form method="post">
+        <form method="post" id="cv-form">
             <fieldset>
                 <legend>Dados pessoais</legend>
+
                 <div>
                     <label for="name">Nome:</label>
                     <input type="text" id="name" name="name" maxlength="40" required>
                 </div>
+
                 <div>
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" maxlength="50" required>
                 </div>
+                
                 <div>
                     <label for="cpf">CPF:</label>
                     <input type="number" id="cpf" name="cpf" maxlength="11" required>
                 </div>
+
                 <div>
                     <label for="address">Endereço:</label>
-                    <input type="text" id="address" name="address" maxlength="100" required>
+                    <input type="text" id="address" name="address" maxlength="200" required>
                 </div>
+
                 <div>
                     <label for="city">Cidade:</label>
                     <input type="text" id="city" name="city" maxlength="28" required>
                 </div>
+
                 <div>
                     <label for="states">Estado:</label>
                     <select id="states" name="state" required></select>
                 </div>
+
                 <div>
                     <p>Reside em:</p>
-                    <!-- Como colocar campo com obrigatório?-->
-                    <label for="home"><input type="radio" id="home" name="local" required>Casa</label>
-                    <label for="apt"><input type="radio" id="apt" name="local" required>Apartamento</label>
+                    <label for="home"><input type="radio" id="home" name="local" required><span>Casa</span></label>
+                    <label for="apt"><input type="radio" id="apt" name="local" required><span>Apartamento</span></label>
                 </div>
             </fieldset>
+
             <fieldset>
                 <legend>Dados do seu último emprego</legend>
+
                 <div>
-                    <label for="textarea">Resumo do currículo:</label>
-                    <textarea id="textarea" name="resume" cols="30" rows="10" maxlength="1000" required></textarea>
+                    <label for="resume">Resumo do currículo:</label>
+                    <textarea id="resume" name="resume" cols="100" rows="20" maxlength="1000" required></textarea>
                 </div>
+
                 <div>
                     <label for="office">Cargo:</label>
-                    <input type="text" id="office" name="office"required>
+                    <input type="text" id="office" name="office" maxlength="40" required>
                 </div>
+
                 <div>
                     <label for="description">Descrição do Cargo:</label>
                     <input type="text" id="description" name="description" maxlength="500" required>
                 </div>
                 <div>
-                    <p>Data de ínicio:</p>
-                    
+                    <label for="date">Data de ínicio</label>
+                    <input type="text" name="date" id="date" required>
                    <!--  <label for="day">Dia:</label>
                     <input type="number" max="31" min="1" id="day" required>
                     <label for="month">Mês:</label>
@@ -70,6 +82,9 @@
                     <input type="number" id="year" min="1920"required> -->
                 </div>
             </fieldset>
+
+            <button type="submit">Enviar</button>
+            <button type="button">Limpar</button>
         </form>
     </main>
     <script src="script.js"></script>
