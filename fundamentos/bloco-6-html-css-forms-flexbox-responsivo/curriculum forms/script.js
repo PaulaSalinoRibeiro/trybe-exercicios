@@ -9,3 +9,11 @@ for(let i = 0; i < states.length; i += 1){
     setect.appendChild(option); 
 }
 
+let forms = document.getElementById('cv-form');
+let send = document.getElementById('send');
+
+function stopFlux (event) {
+    event.preventDefaul();
+}
+
+send.addEventListener('click', stopFlux)
