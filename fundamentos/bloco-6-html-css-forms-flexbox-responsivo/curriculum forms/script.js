@@ -38,16 +38,15 @@ validate
         value: 50,
     }
   ])
-  .addField('#cpf', [ // cpf accept just numbers
+  .addField('#cpf', [ // cpf accpet just numbers
       {
         rule: 'required',
       },
       {
         rule: 'maxLength',
-         value: 11
+         value: 11,
       }
   ]) 
-  
 
   window.onload = function () {
 
