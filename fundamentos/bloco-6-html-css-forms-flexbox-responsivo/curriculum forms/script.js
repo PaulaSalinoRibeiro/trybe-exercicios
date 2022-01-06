@@ -31,16 +31,52 @@ function cpfValidated () {
     if(cpf.value.length > 11 || cpf.value.length === 0){
         alert('cpf inválido!')
     }
-
     // if just numbers?
+}
+
+function adressValidated () {
+    let adress = document.querySelector('[name=adress]')
+    if(adress.value.length > 200 || adress.value.length === 0){
+        alert('Endereço inválido!')
+    }
+}
+
+function cityValidated () {
+    let city = document.querySelector('[name=city]')
+    if(city.value.length > 28 || city.value.length === 0){
+        alert('Cidade inválida!')
+    }
+}
+
+// Check select no empty 
+
+function localValidated () {
+    let local = document.querySelectorAll('[name=local]')
+    //console.log(local);
+    /* for(let i = 0; i < local.length; i+=1){
+        if(local.required === false){
+            alert('Residencia inválida!')
+        }
+    } */
+}
+
+function resumeValidated () {
+    let resume = document.querySelector('[name=resume]')
+    if(resume.value.length > 1000 || resume.value.length === 0){
+        alert('Resume inválido!')
+    }
 }
 
 function defaulSubmit(event) {
     event.preventDefault();
 
-    nameValidated ()
-    emailValidated ()
-    cpfValidated ()
+   // nameValidated ()
+   // emailValidated ()
+   // cpfValidated ()
+   // adressValidated ()
+   // cityValidated ()
+   // localValidated ()
+   resumeValidated ()
 }
 
 window.onload = function () {
