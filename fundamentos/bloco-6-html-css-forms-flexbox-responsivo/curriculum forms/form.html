@@ -15,7 +15,7 @@
         <h1 class="h1">Formulário de Cadastro de Currículo</h1>
     </header>
     <main>
-        <form method="post" id="form">
+        <form method="get" id="form">
             <div class="container">
                 <p class="lead">Dados pessoais</p>
                 <div>
@@ -64,7 +64,7 @@
                 </div>
                 <div>
                     <label for="office" class="form-label">Cargo:</label>
-                    <input type="text" id="office" name="office"required class="form-control">
+                    <input type="text" id="office" name="office"maxlength="40" required class="form-control">
                 </div>
                 <div>
                     <label for="description" class="form-label">Descrição do Cargo:</label>
@@ -84,7 +84,7 @@
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
     <script src="pikaday.js"></script>
-    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script> 
     
 </body>
 </html>
