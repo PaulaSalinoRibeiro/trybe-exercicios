@@ -39,8 +39,7 @@
   }
   
   section {
-    
-
+   
   }
   
   figure {
@@ -59,10 +58,26 @@
     }
 
     section {
-      border: 1px solid red;
       display: flex;
       flex-flow: column wrap;
       width: 1000px;
       height: 1600px;
     }
+
+    article {
+      margin: 0;
+    }
+
+    main {
+      margin: 0;
+      
+    }
   } 
+
+  @media screen and (min-width: 980px) {
+    
+    body {
+      background-color: rgb(199, 120, 173);
+      font-size: 28px;
+    }
+  }
