@@ -20,6 +20,4 @@
       console.log(elseScope);
     }
   }
-
-  testingScope(true);
-
+  
