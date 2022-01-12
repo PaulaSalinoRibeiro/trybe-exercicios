@@ -27,3 +27,17 @@ const largeWord = (str) => {
   return logestWord;
 }
 
+const button = document.getElementById('button');
+const count = document.getElementById('count');
+
+let clickCount = 0;  
+
+//button.addEventListener('click', () => count.innerHTML = clickCount += 1)
+
+const countClick = () => {
+    clickCount += 1;
+    console.log(clickCount);
+    count.innerHTML = clickCount ;
+}
+
+button.addEventListener('click', countClick);
