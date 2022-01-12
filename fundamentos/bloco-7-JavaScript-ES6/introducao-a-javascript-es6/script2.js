@@ -12,3 +12,18 @@ const factorial = num => {
 }
 
 /* Crie uma função que receba uma frase e retorne qual a maior palavra.*/
+
+const largeWord = (str) => {
+
+  const words = str.split(' ');
+  let logestWord = words[0];
+
+  for(let i = 0; i < words.length; i += 1){
+    if(words[i].length > logestWord.length){
+        logestWord = words[i];
+    }
+  }
+
+  return logestWord;
+}
+
