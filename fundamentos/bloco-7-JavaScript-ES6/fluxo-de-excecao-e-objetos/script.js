@@ -101,3 +101,19 @@ const student2 = {
 
 // console.log(Object.values(coolestTvShow)); // Object.values: utilizado para listar as propriedades de um objeto retornando-as em um array
 
+//console.log(Object.entries(coolestTvShow));  // Object.entries retorna um array de arrays onde a primeira entrada é a chave do objeto em formato de string e o segundo valor é o seu respectivo valor
+
+const países = {
+  França: 'Paris',
+  Brasil: 'Brasília',
+  Espanha: 'Madrid',
+  Portugal: 'Lisboa',
+};
+const pairKeyValue = Object.entries(países);
+//console.log(pairKeyValue);
+
+for(index in pairKeyValue) {
+  console.log('--------');
+  console.log('País:', pairKeyValue[index][0]);
+  console.log('Capital:', pairKeyValue[index][1]);
+};
