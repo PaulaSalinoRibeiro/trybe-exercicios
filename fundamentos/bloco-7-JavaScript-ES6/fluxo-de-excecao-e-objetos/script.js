@@ -135,5 +135,18 @@ const family = {
 };
 
 Object.assign(person, info, family) // Object.assign: utilizado para copiar os valores de todas as propriedades de um ou mais objetos para um objeto destino 
-console.log(person)
+//console.log(person)
 
+
+const person1 = {
+  name:'Roberto',
+};
+
+const lastName1 = {
+  lastName: 'Silva',
+};
+
+const newPerson = Object.assign({},person1,lastName1); // para não modificar o objeto clonado, passar como primeiro parametro do Object.assign um objeto vazio e armazena seu retorno em uma variavel
+newPerson.name = 'Gilberto';
+console.log(newPerson);
+console.log(person1);
