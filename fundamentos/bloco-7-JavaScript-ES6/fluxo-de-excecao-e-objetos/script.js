@@ -12,6 +12,7 @@ const sum = (value1, value2) => {
 
     verifyIsNumber(value1, value2);
     return value1 + value2;
+    
   } catch (error) {
     throw error.message
   }
