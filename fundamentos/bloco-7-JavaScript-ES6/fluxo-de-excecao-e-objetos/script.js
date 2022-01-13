@@ -86,16 +86,18 @@ const student2 = {
   Git: 'Bom', // chave adicionada
 };
 
-const skills = obj => {
+/* const skills = obj => {
   
   const arrSkills = Object.keys(obj);
 
   for(let index in arrSkills){
-    
     console.log(`${arrSkills[index]}, Nível: ${obj[arrSkills[index]]}`)
   }
 
-}
+} */
 
 //skills(student2);
 //skills(student1);
+
+// console.log(Object.values(coolestTvShow)); // Object.values: utilizado para listar as propriedades de um objeto retornando-as em um array
+
