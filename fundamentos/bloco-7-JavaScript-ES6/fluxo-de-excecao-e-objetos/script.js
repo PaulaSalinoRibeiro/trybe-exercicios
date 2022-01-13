@@ -113,7 +113,27 @@ const pairKeyValue = Object.entries(países);
 //console.log(pairKeyValue);
 
 for(index in pairKeyValue) {
-  console.log('--------');
-  console.log('País:', pairKeyValue[index][0]);
-  console.log('Capital:', pairKeyValue[index][1]);
+  //console.log('--------');
+  //console.log('País:', pairKeyValue[index][0]);
+  //console.log('Capital:', pairKeyValue[index][1]);
 };
+
+const person = {
+  name: 'Alberto',
+  lastName: 'Gomes',
+  age: 20,
+};
+
+const info = {
+  age: 23,
+  job: 'engenheiro',
+};
+
+const family = {
+  children: ['Maria', 'João'],
+  wife: 'Ana',
+};
+
+Object.assign(person, info, family) // Object.assign: utilizado para copiar os valores de todas as propriedades de um ou mais objetos para um objeto destino 
+console.log(person)
+
