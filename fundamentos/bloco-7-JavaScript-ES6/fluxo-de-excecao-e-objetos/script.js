@@ -55,3 +55,47 @@ let obj = {
 }
 
 //console.log(creatObj(obj, 'age', 31))
+
+const coolestTvShow = {
+  name: "BoJack Horseman",
+  genre: "adult animation",
+  createdBy: "Raphael Bob-Waksberg",
+  favoriteCharacter: "Princess Carolyn",
+  quote: "Princess Carolyn always lands on her feet.",
+  seasons: 6,
+};
+
+for(let key in coolestTvShow){
+  //console.log(key);
+}
+
+//console.log(Object.keys(coolestTvShow)); // Object.keys: utilizado para listar as chaves de um objeto retornando-as em um array
+
+const student1 = {
+  Html: 'Muito Bom',
+  Css: 'Bom',
+  JavaScript: 'Ótimo',
+  SoftSkills: 'Ótimo',
+};
+
+const student2 = {
+  Html: 'Bom',
+  Css: 'Ótimo',
+  JavaScript: 'Ruim',
+  SoftSkills: 'Ótimo',
+  Git: 'Bom', // chave adicionada
+};
+
+const skills = obj => {
+  
+  const arrSkills = Object.keys(obj);
+
+  for(let index in arrSkills){
+    
+    console.log(`${arrSkills[index]}, Nível: ${obj[arrSkills[index]]}`)
+  }
+
+}
+
+//skills(student2);
+//skills(student1);
