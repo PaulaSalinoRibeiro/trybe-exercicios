@@ -6,4 +6,4 @@ function sum(a, b) {
   return a + b;
 }
 
-module.exports('./sum.test.js');
+module.exports = sum;
