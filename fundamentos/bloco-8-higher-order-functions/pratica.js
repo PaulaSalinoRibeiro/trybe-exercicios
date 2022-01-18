@@ -13,4 +13,18 @@
     return employees;
   };
 
-  console.log(newEmployees(newPerson));
+//console.log(newEmployees(newPerson));
+
+const raflle = () => {
+  let random =  ( Math.floor( Math.random() * 5) + 1 );
+  return random;
+}
+
+const gambling = (num, raflle) => {
+  if( num === raflle() ) {
+    return 'Parabéns você ganhou';
+  }
+  return 'Tente novamente'
+};
+
+console.log(gambling(5, raflle));
