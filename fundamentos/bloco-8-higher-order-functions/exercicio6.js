@@ -68,4 +68,6 @@ function someBookWasReleaseOnThe80s() {
   // escreva seu código aqui
 }
 
-const eighty
+const eighty = books.some((book) => (1980 <= book.releaseYear < 1990));
+
+console.log(eighty)
