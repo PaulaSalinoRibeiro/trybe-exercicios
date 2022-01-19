@@ -61,8 +61,10 @@ const books = [
   },
 ];
 
-// Ordene os livros por data de lançamento em ordem decrescente.
-function booksOrderedByReleaseYearDesc() {
-  return books.sort((a, b) => a.releaseYear - b.releaseYear);
-};
-console.log(booksOrderedByReleaseYearDesc());
+// Encontre o primeiro livro cujo nome possui 26 caracteres
+function getNamedBook(callback) {
+ return callback.name;
+}
+
+const book = books.find((books) => books.name.length >= 16);
+console.log(getNamedBook(book));
