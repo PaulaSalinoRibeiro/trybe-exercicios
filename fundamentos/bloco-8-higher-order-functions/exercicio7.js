@@ -72,3 +72,14 @@ const expectedResult = false;
       && (bookSome.author.name !== book.author.name)));
 } */
 
+const verifyBrithYear = () => {
+  const ages = [];
+  books.forEach((book) => {
+    ages.push(book.author.birthYear);
+  });
+  ages.sort((a, b) => a - b);
+  const equalAges = ages.some((age, index, array) => (age === array[index + 1]));
+  return equalAges;
+};
+
+console.log(verifyBrithYear());
