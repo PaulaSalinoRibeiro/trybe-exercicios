@@ -14,3 +14,4 @@ const expected = [
   { name: 'Miguel', average: 9.2 },
   { name: 'Maria Clara', average: 8.8 },
 ];
+
