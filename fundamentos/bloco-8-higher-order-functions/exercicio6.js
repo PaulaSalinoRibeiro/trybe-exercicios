@@ -1,17 +1,3 @@
-
-const arrays = [
-  ['1', '2', '3'],
-  [true],
-  [4, 5, 6],
-];
-
-function flatten() {
-  return arrays.reduce((acc, elem) => {
-    return acc.concat(elem)
-  }, []);
-};
-console.log(flatten());
-
 const books = [
   {
     id: 1,
@@ -76,29 +62,28 @@ const books = [
 ];
 
 
-// Crie um array com strings no formato NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA
+// Crie um array com o nome de todos os livros com mais de 60 anos de publicação.
 
 const expectedResult = [
-  'As Crônicas de Gelo e Fogo - Fantasia - George R. R. Martin',
-  'O Senhor dos Anéis - Fantasia - J. R. R. Tolkien',
-  'Fundação - Ficção Científica - Isaac Asimov',
-  'Duna - Ficção Científica - Frank Herbert',
-  'A Coisa - Terror - Stephen King',
-  'O Chamado de Cthulhu - Terror - H. P. Lovecraft',
+  'O Senhor dos Anéis',
+  'Fundação',
+  'O Chamado de Cthulhu',
 ];
 
-function formatedBookNames() {
-  const str = books.map((book) => `${book.name} - ${book.genre} - ${book.author.name}`);
-  return str;
+function oldBooks() {
+  const booksOld = books.filter((book) => 2022 - book.releaseYear > 60).map((title) => title.name);
+  return booksOld;
 };
-console.log(formatedBookNames());
+console.log(oldBooks());
 
-// Encontre o nome da primeira pessoa autora do livro nascida no ano de 1947
+// Faça uma função que retorne true , se algum livro foi lançado na década de 80, e false , caso contrário.
+const expectedResult = true;
 
-function authorBornIn1947(callback) {
-  return callback.author.name;
-};
-const author = books.find((books) => books.author.birthYear === 1947);
-console.log(authorBornIn1947(author));
+function someBookWasReleaseOnThe80s() {
+  // escreva seu código aqui
+}
 
+const eighty = books.some((book) => (1980 <= book.releaseYear < 1990));
+
+console.log(eighty)
 

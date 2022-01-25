@@ -1,17 +1,3 @@
-
-const arrays = [
-  ['1', '2', '3'],
-  [true],
-  [4, 5, 6],
-];
-
-function flatten() {
-  return arrays.reduce((acc, elem) => {
-    return acc.concat(elem)
-  }, []);
-};
-console.log(flatten());
-
 const books = [
   {
     id: 1,
@@ -76,29 +62,39 @@ const books = [
 ];
 
 
-// Crie um array com strings no formato NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA
+// Encontre o nome do livro escrito pela pessoa cujo nome registrado começa com três iniciais.
+// Dica: cada inicial termina com um ponto.
 
-const expectedResult = [
-  'As Crônicas de Gelo e Fogo - Fantasia - George R. R. Martin',
-  'O Senhor dos Anéis - Fantasia - J. R. R. Tolkien',
-  'Fundação - Ficção Científica - Isaac Asimov',
-  'Duna - Ficção Científica - Frank Herbert',
-  'A Coisa - Terror - Stephen King',
-  'O Chamado de Cthulhu - Terror - H. P. Lovecraft',
-];
+const expectedResult = 'O Senhor dos Anéis';
 
-function formatedBookNames() {
-  const str = books.map((book) => `${book.name} - ${book.genre} - ${book.author.name}`);
-  return str;
+function authorWith3DotsOnName() {
+  return books.filter((book) => 
+    book.author.name[1] === '.' && book.author.name[4] === '.' && book.author.name[7] === '.'
+  )[0].name;
 };
-console.log(formatedBookNames());
 
-// Encontre o nome da primeira pessoa autora do livro nascida no ano de 1947
+console.log(authorWith3DotsOnName());
 
-function authorBornIn1947(callback) {
-  return callback.author.name;
+// Faça uma função que retorne true , caso nenhum author tenha nascido no mesmo ano, e false , caso contrário
+
+const expectedResult = false;
+
+/* function authorUnique() {
+  return books.every((book) =>
+    !books.some((bookSome) =>
+      (bookSome.author.birthYear === book.author.birthYear)
+      && (bookSome.author.name !== book.author.name)));
+} */
+
+const verifyBrithYear = () => {
+  const ages = [];
+  books.forEach((book) => {
+    ages.push(book.author.birthYear);
+  });
+  ages.sort((a, b) => a - b);
+  const equalAges = ages.some((age, index, array) => (age === array[index + 1]));
+  return equalAges;
 };
-const author = books.find((books) => books.author.birthYear === 1947);
-console.log(authorBornIn1947(author));
 
+console.log(verifyBrithYear());
 
