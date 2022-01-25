@@ -61,6 +61,20 @@ const books = [
   },
 ];
 
+
+// Encontre o nome do livro escrito pela pessoa cujo nome registrado começa com três iniciais.
+// Dica: cada inicial termina com um ponto.
+
+const expectedResult = 'O Senhor dos Anéis';
+
+function authorWith3DotsOnName() {
+  return books.filter((book) => 
+    book.author.name[1] === '.' && book.author.name[4] === '.' && book.author.name[7] === '.'
+  )[0].name;
+};
+
+console.log(authorWith3DotsOnName());
+
 // Faça uma função que retorne true , caso nenhum author tenha nascido no mesmo ano, e false , caso contrário
 
 const expectedResult = false;
@@ -83,3 +97,4 @@ const verifyBrithYear = () => {
 };
 
 console.log(verifyBrithYear());
+

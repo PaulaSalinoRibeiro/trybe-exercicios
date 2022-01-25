@@ -61,6 +61,24 @@ const books = [
   },
 ];
 
+
+// Crie um array em ordem alfabética apenas com os nomes de todas as pessoas autoras de ficção científica ou fantasia.
+
+const expectedResult = [
+  'Frank Herbert',
+  'George R. R. Martin',
+  'Isaac Asimov',
+  'J. R. R. Tolkien',
+];
+
+function fantasyOrScienceFictionAuthors() {
+  const authors = books.filter((book) => book.genre === 'Ficção Científica' || book.genre === 'Fantasia');
+  
+ return authors.map((author) => author.author.name).sort();
+  
+};
+console.log(fantasyOrScienceFictionAuthors());
+
 // Faça uma função que retorne true , se todas as pessoas autoras nasceram no século XX, ou false , caso contrário.
 
 //const expectedResult = false;
@@ -74,3 +92,4 @@ function everyoneWasBornOnSecXX(callback) {
 const year = books.some((books) => { books.author.birthYear > 1901});
 console.log(year);
 console.log(everyoneWasBornOnSecXX(year));
+
