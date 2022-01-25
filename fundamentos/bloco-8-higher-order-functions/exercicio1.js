@@ -1,3 +1,17 @@
+
+const arrays = [
+  ['1', '2', '3'],
+  [true],
+  [4, 5, 6],
+];
+
+function flatten() {
+  return arrays.reduce((acc, elem) => {
+    return acc.concat(elem)
+  }, []);
+};
+console.log(flatten());
+
 const books = [
   {
     id: 1,
@@ -86,4 +100,5 @@ function authorBornIn1947(callback) {
 };
 const author = books.find((books) => books.author.birthYear === 1947);
 console.log(authorBornIn1947(author));
+
 

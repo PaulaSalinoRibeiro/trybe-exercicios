@@ -1,3 +1,4 @@
+
 const books = [
   {
     id: 1,
@@ -61,6 +62,33 @@ const books = [
   },
 ];
 
+
+
+// Encontre o livro com o maior nome
+
+/* const expectedResult = {
+  id: 1,
+  name: 'As Crônicas de Gelo e Fogo',
+  genre: 'Fantasia',
+  author: {
+    name: 'George R. R. Martin',
+    birthYear: 1948,
+  },
+  releaseYear: 1991,
+}; */
+
+function longestNamedBook() {
+  const title = books.reduce((acc, element, index, array) => {
+
+    if (acc.name.length < element.name.length) {
+     acc = element.name;
+    }
+    return acc;
+  });
+  return title.name;
+};
+
+console.log(longestNamedBook());
 
 // Crie um array ordenado pelos livros com mais de 60 anos de publicação e ordene-o pelo livro mais velho.
 
