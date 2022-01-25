@@ -1,4 +1,11 @@
 
+const myList = [1, 2, 3];
+
+const swap = (arr) =>  [arr[arr.length - 1], arr[1] ,arr[0]];
+
+console.log(swap(myList));
+
+
 // Dada o array de nomes, retorne a quantidade de vezes em que aparecem a letra a maiúscula ou minúscula.
 
 const names = [
@@ -114,5 +121,6 @@ function everyoneWasBornOnSecXX(callback) {
 const year = books.some((books) => { books.author.birthYear > 1901});
 console.log(year);
 console.log(everyoneWasBornOnSecXX(year));
+
 
 
