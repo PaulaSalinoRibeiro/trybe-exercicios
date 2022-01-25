@@ -1,14 +1,3 @@
-
-const palio = ['Palio', 'Fiat', 2019];
-const shelbyCobra = ['Shelby Cobra', 'Ford', 1963];
-const chiron = ['Chiron', 'Bugatti', 2016];
-
-// escreva toObject abaixo
-
-const toObject = ([name, brand, year]) => ({ name, brand, year });
-
-console.log(toObject(palio));
-
 const books = [
   {
     id: 1,
@@ -72,30 +61,16 @@ const books = [
   },
 ];
 
+// Calcule a média de idade que as pessoas autoras tinham quando seus respectivos livros foram lançados.
 
-// Crie um array com o nome de todos os livros com mais de 60 anos de publicação.
+const expectedResult = 43;
 
-const expectedResult = [
-  'O Senhor dos Anéis',
-  'Fundação',
-  'O Chamado de Cthulhu',
-];
-
-function oldBooks() {
-  const booksOld = books.filter((book) => 2022 - book.releaseYear > 60).map((title) => title.name);
-  return booksOld;
+function averageAge() {
+  const allAuthors = books.length;
+  const ages = books.reduce((acc, book, index, array) => {
+    acc += book.releaseYear - book.author.birthYear;
+    return acc;
+  }, 0);
+  return ages / allAuthors;
 };
-console.log(oldBooks());
-
-// Faça uma função que retorne true , se algum livro foi lançado na década de 80, e false , caso contrário.
-const expectedResult = true;
-
-function someBookWasReleaseOnThe80s() {
-  // escreva seu código aqui
-}
-
-const eighty = books.some((book) => (1980 <= book.releaseYear < 1990));
-
-console.log(eighty)
-
-
+console.log(averageAge());
