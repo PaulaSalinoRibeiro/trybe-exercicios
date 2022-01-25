@@ -61,6 +61,7 @@ const books = [
   },
 ];
 
+
 // Crie um array ordenado pelos livros com mais de 60 anos de publicação e ordene-o pelo livro mais velho.
 
 const expectedResult = [
@@ -92,3 +93,10 @@ function oldBooksOrdered() {
   return olldBook;
 };
 console.log(oldBooksOrdered());
+
+// Ordene os livros por data de lançamento em ordem decrescente.
+function booksOrderedByReleaseYearDesc() {
+  return books.sort((a, b) => a.releaseYear - b.releaseYear);
+};
+console.log(booksOrderedByReleaseYearDesc());
+

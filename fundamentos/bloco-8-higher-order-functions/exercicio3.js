@@ -61,6 +61,7 @@ const books = [
   },
 ];
 
+
 // Crie um array com todos os objetos que possuem gênero ficção científica ou fantasia.
 
 const expectedResult = [
@@ -99,3 +100,12 @@ function fantasyOrScienceFiction() {
   return genres;
 };
 console.log(fantasyOrScienceFiction());
+
+// Encontre o primeiro livro cujo nome possui 26 caracteres
+function getNamedBook(callback) {
+ return callback.name;
+}
+
+const book = books.find((books) => books.name.length >= 16);
+console.log(getNamedBook(book));
+

@@ -61,6 +61,7 @@ const books = [
   },
 ];
 
+
 // Crie um array com strings no formato NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA
 
 const expectedResult = [
@@ -77,3 +78,12 @@ function formatedBookNames() {
   return str;
 };
 console.log(formatedBookNames());
+
+// Encontre o nome da primeira pessoa autora do livro nascida no ano de 1947
+
+function authorBornIn1947(callback) {
+  return callback.author.name;
+};
+const author = books.find((books) => books.author.birthYear === 1947);
+console.log(authorBornIn1947(author));
+

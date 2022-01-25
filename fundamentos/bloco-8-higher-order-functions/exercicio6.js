@@ -61,6 +61,7 @@ const books = [
   },
 ];
 
+
 // Crie um array com o nome de todos os livros com mais de 60 anos de publicação.
 
 const expectedResult = [
@@ -74,3 +75,15 @@ function oldBooks() {
   return booksOld;
 };
 console.log(oldBooks());
+
+// Faça uma função que retorne true , se algum livro foi lançado na década de 80, e false , caso contrário.
+const expectedResult = true;
+
+function someBookWasReleaseOnThe80s() {
+  // escreva seu código aqui
+}
+
+const eighty = books.some((book) => (1980 <= book.releaseYear < 1990));
+
+console.log(eighty)
+
