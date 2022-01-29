@@ -25,7 +25,7 @@
   }, 500);
 }); */
 
-const asyncSum = require('./conteudo');
+/* const asyncSum = require('./conteudo.js');
 
 test('Testando asyncSum, soma 5 mais 10', (done) => {
   asyncSum(5, 10, (result) => {
@@ -36,4 +36,4 @@ test('Testando asyncSum, soma 5 mais 10', (done) => {
       done(error);
     }
   });
-});
+}); */

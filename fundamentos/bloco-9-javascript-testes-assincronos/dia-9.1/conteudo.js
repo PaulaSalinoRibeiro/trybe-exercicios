@@ -195,17 +195,14 @@ getCountry(countryCurrency, printErrorMessage); */
 
 // --> Testes assíncronos com callbacks
 
-const asyncSum = (a, b, callback) => {
+/* const asyncSum = (a, b, callback) => {
   setTimeout(() => {
     const result = a + b;
     callback(result);
   }, 500);
 };
 
-console.log(asyncSum(5, 10, (result)))
-
-module.exports = asyncSum;
-
+module.exports = asyncSum; */
 
 // --> Setup e Teardown
 
