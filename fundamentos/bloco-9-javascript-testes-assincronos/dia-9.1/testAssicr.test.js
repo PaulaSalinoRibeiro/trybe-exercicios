@@ -36,4 +36,27 @@ test('Testando asyncSum, soma 5 mais 10', (done) => {
       done(error);
     }
   });
-}); */
+});
+ */
+
+/* ---------------------------------------------------------------- */
+
+const uppercase = (str, callback) => {
+  setTimeout(() => {
+    callback(str.toUpperCase());
+  }, 500);
+};
+
+test('verifica a chamada da callback na função uppercase', (done) => {
+
+  uppercase('hello', (str) => {
+    try {
+      expect(str).toEqual('HELLO');
+      done();
+    } catch (error) {
+      done(error);
+    }
+  });
+});
+
+//console.log(uppercase('hello'));
