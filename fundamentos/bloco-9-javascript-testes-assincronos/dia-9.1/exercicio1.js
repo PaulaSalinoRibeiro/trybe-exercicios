@@ -124,7 +124,7 @@ const pokemons = [
 function getPokemonDetails(filter, callback) {
   setTimeout(() => {
     if (pokemons.find(filter) === undefined) {
-      return callback(new Error('Não temos esse pokémon para você :'), null);
+      return callback(new Error('Não temos esse pokémon para você :('), null);
     }
     const pokemon = pokemons.find(filter);
 
