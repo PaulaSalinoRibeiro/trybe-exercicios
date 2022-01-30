@@ -103,7 +103,7 @@ sendMarsTemperature(greet, handleError); */
 
 /* ------------------------------------------------------------------------------------------------------------- */
 
-const pokemons = [
+/* const pokemons = [
   {
     name: 'Bulbasaur',
     type: 'Grass',
@@ -144,7 +144,7 @@ function getPokemonDetails(filter, callback) {
   }
 } */
 
-getPokemonDetails(
+/* getPokemonDetails(
   (pokemon) => pokemon.name !== undefined,
   (error, message) => {
     if (message) {
@@ -157,4 +157,5 @@ getPokemonDetails(
 
 module.exports = {
   getPokemonDetails,
-};
+}; 
+ */
