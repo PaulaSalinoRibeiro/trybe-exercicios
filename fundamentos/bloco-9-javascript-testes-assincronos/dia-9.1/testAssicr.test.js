@@ -41,7 +41,7 @@ test('Testando asyncSum, soma 5 mais 10', (done) => {
 
 /* ---------------------------------------------------------------- */
 
-const uppercase = (str, callback) => {
+/* const uppercase = (str, callback) => {
   setTimeout(() => {
     callback(str.toUpperCase());
   }, 500);
@@ -59,4 +59,19 @@ test('verifica a chamada da callback na função uppercase', (done) => {
   });
 });
 
-//console.log(uppercase('hello'));
+//console.log(uppercase('hello')); */
+
+/* ---------------------------------------------------------------------- */
+
+// Verifique se a importação do arquivo correto está sendo feita.
+const { getPokemonDetails } = require("./exercicio1.js");
+
+describe("A função getPokemonDetails", () => {
+  it("retorna erro quando procuramos um pokemon que não existe no banco de dados", () => {
+    // Escreva aqui seu código
+  });
+
+  it("retorna um pokemon que existe no banco de dados", () => {
+    // Escreva aqui seu código
+  });
+});
