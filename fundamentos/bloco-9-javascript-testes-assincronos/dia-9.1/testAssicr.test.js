@@ -64,7 +64,7 @@ test('verifica a chamada da callback na função uppercase', (done) => {
 /* ---------------------------------------------------------------------- */
 
 // Verifique se a importação do arquivo correto está sendo feita.
-const { getPokemonDetails } = require("./exercicio1.js");
+/* const { getPokemonDetails } = require("./exercicio1.js");
 
 
 describe("A função getPokemonDetails", () => {
@@ -85,7 +85,7 @@ describe("A função getPokemonDetails", () => {
   });
 
   it("retorna um pokemon que existe no banco de dados", (done) => {
-    
+
     const expectedString = 'Olá, seu pokémon é o Charmander, o tipo dele é Fire e a habilidade principal dele é Ember';
 
     function callback(error, result) {
@@ -99,4 +99,18 @@ describe("A função getPokemonDetails", () => {
 
     getPokemonDetails((pokemon) => pokemon.name === 'Charmander', callback);
   });
-});
+}); */
+
+/* ---------------------------------------------------------------------------- */
+
+/* beforeEach(() => console.log('1 - beforeEach'));
+afterEach(() => console.log('1 - afterEach'));
+
+test('', () => console.log('1 - test'));
+
+describe('Scoped / Nested block', () => {
+  beforeEach(() => console.log('2 - beforeEach'));
+  afterEach(() => console.log('2 - afterEach'));
+
+  test('', () => console.log('2 - test'));
+}); */
