@@ -33,7 +33,27 @@ const convertCoin = async () => {
 
   const crypt = await cryptos();
   // console.log(crypt);
-  const currCoin = await curryceCoin();
+  const currCoin = await curryceCoin();const convertCoin = async () => {
+
+    const crypt = await cryptos();
+    // console.log(crypt);
+    const currCoin = await curryceCoin();
+    // console.log(currCoin);
+  
+    const list = document.getElementById('coins');
+    
+    const first10Coins = crypt.filter((coin) => coin.rank <= 10)
+    // console.log(first10Coins)
+    first10Coins.forEach((coin) => {
+      // console.log(typeof coin.priceUsd);
+      const BRL = Number(coin.priceUsd) * currCoin;
+      const item = document.createElement('li');
+      item.innerText = `${coin.name} (${coin.symbol}): R$${BRL.toFixed(3)}`;
+      list.appendChild(item);
+    });
+  } 
+   
+  window.onload = () => convertCoin();
   // console.log(currCoin);
 
   const list = document.getElementById('coins');
