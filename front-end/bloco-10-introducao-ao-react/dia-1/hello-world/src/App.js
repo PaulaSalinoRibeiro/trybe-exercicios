@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import Header from "./components/Header";
 import Content from "./components/Content";
 import Footer from "./components/Footer";
@@ -14,6 +14,21 @@ class App extends React.Component {
       <ul>
         {commitment.map((element, index) => Task(element, index))}
       </ul>
+    )
+  }
+} */
+
+/* const Task = () => {
+  const commitment = ['learn React', 'pratic with exercise', 'read documentation'];
+  return (
+    commitment.map((elem, index) => <ul> <li key={index}>{elem}</li></ul>)
+  )
+}
+
+class App extends Component {
+  render() {
+    return (
+      <Task/>
     )
   }
 } */
