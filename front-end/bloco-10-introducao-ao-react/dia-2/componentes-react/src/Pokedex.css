@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  border: 1px solid black;
+  width: 750px;
+  margin-left: 30%;
+  margin-top: 25px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.title {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.pokedex {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+
+}
+
+.pokemom {
+  border: 1px solid black;
+  margin: 15px;
+  border-radius: 7px;
+  width: 300px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
