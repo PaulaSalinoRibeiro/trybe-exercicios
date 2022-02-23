@@ -6,7 +6,7 @@ import '../css/TopicCard.css'
 export default class TopicCard extends Component {
   render() {
     const {
-      topic: {title, thumbnail, level, finesh } 
+      topic: {title, thumbnail, level, finesh }, removeItem
     } = this.props;
 
     return (
@@ -22,8 +22,10 @@ export default class TopicCard extends Component {
           </span>
         </div>
         <div>
-          <button type='button'>
-            <img src={deleteIcon} alt='delete'/>
+          <button 
+            type='button'
+            onClick={()=> removeItem(title)}>
+              <img src={deleteIcon} alt='delete icon'/>
           </button>
         </div>
       </div>
